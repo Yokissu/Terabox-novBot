@@ -18,7 +18,7 @@ const sendFile = async (item, ctx) => {
       try{
         await ctx.replyWithDocument(data.downloadLink)
       }catch(e){
-ctx.replyWithMarkdown(`${e.message}\n\nTry manually downloading from [⚡here⚡] \nor Use Our Site (${data.downloadLink})`);
+ctx.replyWithMarkdown(`${e.message}\n\nTry  downloading from [⚡here⚡](${data.downloadLink})`\nor Use Our Site );
       }
         
     }
